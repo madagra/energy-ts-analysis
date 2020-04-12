@@ -1,4 +1,4 @@
-# Time series analysis on energy consumption data
+# Time series forecasting of energy data
  
 Jupyter notebook implementing time series forecasting of energy consumption data with different techniques:
 * Simple and double exponential smoothing
