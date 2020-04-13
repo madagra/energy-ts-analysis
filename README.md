@@ -21,3 +21,15 @@ jupyter notebook
 ```
 
 Now you should be able to execute the code in the notebook with all related dependencies installed.
+
+You can also play with the ML forecasting models using the CLI script 
+contained in the `src` folder. After having install the dependencies you can execute 
+the script with the following command inside the `src` folder:
+
+```
+# available commands
+python --help
+
+# 48 steps ahead forecast using recursive technique
+python main.py --steps 48 --fcast recursive
+```
