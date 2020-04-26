@@ -28,7 +28,7 @@ the script with the following command inside the `src` folder:
 
 ```
 # available commands
-python --help
+python main.py --help
 
 # 48 steps ahead forecast using recursive technique
 python main.py --steps 48 --fcast recursive
