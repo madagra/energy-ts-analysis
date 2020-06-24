@@ -88,7 +88,7 @@ def mape(y, yhat, perc=True):
         for a, f in zip(y, yhat):
             # avoid division by 0
             if f > 1e-6:
-                mape.append(np.abs((a - f)/f))
+                mape.append(np.abs((a - f)/a))
         mape = np.mean(np.array(mape))
         return mape * 100. if perc else mape
     except AssertionError:
