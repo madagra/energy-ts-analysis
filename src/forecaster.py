@@ -42,7 +42,8 @@ class Forecaster:
         target = y.copy()
 
         for date in fcast_range:
-
+            
+            # FIXME: This is not correct, use the latest prediction value from the model instead
             new_point = fcasted_values[-1] if len(fcasted_values) > 0 else 0.0   
             target = target.append(pd.Series(index=[date], data=new_point))
 
